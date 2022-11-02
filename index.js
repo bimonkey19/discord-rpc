@@ -1,13 +1,3 @@
-const app = require('express')();
-
-app.get('/', async (req, res) => {
-  res.send('Bot chạy');
-});
-
-app.listen(3000, async () => {
-  console.log('Listening on port 3000');
-});
-
 const RPC = require('discord-rpc');
 const rpc = new RPC.Client({
     transport : 'ipc'
